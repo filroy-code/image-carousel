@@ -89,3 +89,20 @@ function updateHUD(x) {
 }
 
 updateHUD(x)
+slide(x)
+
+slideTimer = setInterval(function(){
+    if (x === (pictures.length - 1)) {x = 0} else {x++;};
+    slide(x)
+}, 5000);
+
+allButtons = document.querySelectorAll('button')
+allButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        clearInterval(slideTimer);
+        slideTimer = setInterval(function(){
+            if (x === (pictures.length - 1)) {x = 0} else {x++;};
+            slide(x)
+        }, 5000);
+    })
+})
