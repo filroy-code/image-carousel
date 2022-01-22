@@ -1,0 +1,116 @@
+img {
+    height: 500px;
+    width: 800px;
+    display: block;
+}
+
+#gallery {
+    display: flex;
+    float:left;
+    position: absolute;
+    transition: left 0.7s;
+}
+
+.displayImage {
+    display: flex;
+    right: 0%;
+    transition: right 1s;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.buttonContainer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftnavButton {
+    position: absolute;
+    right: 90%;
+}
+
+.navButton {
+    position: absolute;
+    top: 50%;
+    height: 55px;
+    width: 55px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    font-size: 35px;
+    align-items: center;
+    color: white;
+    border: none;
+}
+
+.hudButton {
+    float: left;
+    top: 10%;
+    height: 30px;
+    width: 30px;
+    background: rgba(99, 97, 97, 0.7);
+    border-radius: 50%;
+    align-items: center;
+    border: none;
+}
+
+.hudButton:hover {
+    height: 30px;
+    width: 30px;
+    background: rgba(85, 83, 83, 0.7);
+}
+
+.activeBubble {
+    background: rgba(172, 14, 14, 0.7);
+}
+
+.activeBubble:hover {
+    background: rgba(172, 14, 14, 0.7);
+}
+
+.galleryHUD {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+    align-self: center;
+    bottom: 5%;
+    left: 37%;
+}
+
+.navButton:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navButton:active {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.rightnavButton {
+    left: 90%;
+}
+
+.galleryStatus {
+    position: absolute;
+    left: 40%;
+    display: flex;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
